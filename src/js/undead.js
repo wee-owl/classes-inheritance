@@ -1,9 +1,9 @@
 import Character from './app';
 
-class Undead extends Character {
-  constructor(name, attack, protection) {
-    super(name, attack, protection);
-    this.name = 'Undead';
+export default class Undead extends Character {
+  constructor(type, attack, protection) {
+    super(type, attack, protection);
+    this.type = 'Undead';
     this.attack = 25;
     this.protection = 25;
   }

@@ -11,10 +11,10 @@ export default class Character {
     const typeInArr = typeArr.some((el) => el === type);
 
     if (typeof (name) !== 'string' || !(name.length >= 2 && name.length <= 10)) {
-      throw new Error('Invalid string length value (must be between 2 and 10)');
+      throw new Error('Invalid value (string length must be between 2 and 10)');
     }
 
-    if (typeof (type) !== 'string' || !typeInArr) {
+    if (typeof (type) !== 'string' || typeInArr === false) {
       throw new Error('Invalid character name value');
     }
   }

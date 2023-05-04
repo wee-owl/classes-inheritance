@@ -1,9 +1,9 @@
 import Character from './app';
 
-class Bowman extends Character {
-  constructor(name, attack, protection) {
-    super(name, attack, protection);
-    this.name = 'Bowman';
+export default class Bowman extends Character {
+  constructor(type, attack, protection) {
+    super(type, attack, protection);
+    this.type = 'Bowman';
     this.attack = 25;
     this.protection = 25;
   }
